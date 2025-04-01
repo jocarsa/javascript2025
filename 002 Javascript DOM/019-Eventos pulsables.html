@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aprendiendo Javascript</title>
+    </head>
+    <body>
+        <button>Soy un botón</button>
+        <script>
+            let boton = document.querySelector("button");
+            boton.onclick = function(){
+                console.log("Has hecho click en el botón");
+            }
+            boton.onmousedown = function(){
+                console.log("Has hecho click pulsar en el botón");
+            }
+            boton.onmouseup = function(){
+                console.log("Has despulsado el botón");
+            }
+            boton.onmousemove = function(){
+                console.log("Te estas moviendo por el boton");
+            }
+            boton.onmouseover = function(){
+                console.log("Has entrado en el boton");
+            }
+            boton.onmouseout = function(){
+                console.log("Has salido del boton");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aprendiendo Javascript</title>
+    </head>
+    <body>
+        <input type="text">
+        <script>
+            let campo = document.querySelector("input");
+            campo.onclick = function(){
+                console.log("Has hecho click en el campo");
+            }
+            campo.onfocus = function(){
+                console.log("Has entrado en el campo");
+            }
+            campo.onblur = function(){
+                console.log("Has salido del campo");
+            }
+            campo.onkeypress = function(evento){
+                console.log("Has pulsado una tecla");
+                console.log(evento)
+            }
+            campo.onkeydown = function(evento){
+                console.log("Has pulsado una tecla");
+                console.log(evento)
+            }
+            campo.onkeyup = function(evento){
+                console.log("Has pulsado una tecla");
+                console.log(evento)
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aprendiendo Javascript</title>
+        <style>
+            section{display:none;}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <button id="seccion1">Seccion 1</button>
+            <button id="seccion2">Seccion 2</button>
+            <button id="seccion3">Seccion 3</button>
+        </nav>
+        <main>
+            <section id="s1">
+                Este es el contenido de la sección 1
+            </section>
+            <section id="s2">
+                Este es el contenido de la sección 2
+            </section>
+            <section id="s3">
+                Este es el contenido de la sección 3
+            </section>
+        </main>
+        <script>
+            document.querySelector("#seccion1").onclick = function(){
+                document.querySelector("#s1").style.display = "block";
+                document.querySelector("#s2").style.display = "none";
+                document.querySelector("#s3").style.display = "none";
+            }
+            document.querySelector("#seccion2").onclick = function(){
+                document.querySelector("#s1").style.display = "none";
+                document.querySelector("#s2").style.display = "block";
+                document.querySelector("#s3").style.display = "none";
+            }
+            document.querySelector("#seccion3").onclick = function(){
+                document.querySelector("#s1").style.display = "none";
+                document.querySelector("#s2").style.display = "none";
+                document.querySelector("#s3").style.display = "block";
+            }
+        </script>
+    </body>
+</html>
